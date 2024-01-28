@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BodoniFLFRoman';
+    src: url('fonts/BodoniFLFRoman.eot');
+    src: url('fonts/BodoniFLFRoman.eot') format('embedded-opentype'),
+         url('fonts/BodoniFLFRoman.woff2') format('woff2'),
+         url('fonts/BodoniFLFRoman.woff') format('woff'),
+         url('fonts/BodoniFLFRoman.ttf') format('truetype'),
+         url('fonts/BodoniFLFRoman.svg#BodoniFLFRoman') format('svg');
+}

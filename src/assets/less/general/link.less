@@ -1,0 +1,17 @@
+.link--main {
+    font-family: @font-primary;
+    .unitize(font-size, @font-size-bodytext - 4);
+    .unitize(line-height, @font-size-bodytext * 1.5 - 4);
+    color: @white;
+    text-transform: uppercase;
+
+    @media(min-width: @screen-md){
+        .unitize(font-size, @font-size-bodytext + 10);
+        .unitize(line-height, @font-size-bodytext * 1.5 - 2);
+    }
+
+    @media(min-width: @am-xl){
+        .unitize(font-size, @font-size-bodytext + 10);
+        .unitize(line-height, @font-size-bodytext * 1.5);
+    }
+}

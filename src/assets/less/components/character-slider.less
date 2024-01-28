@@ -1,0 +1,44 @@
+.slider--icons {
+    color: @white;
+    font-size: 35px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.slider--symbol-bg {
+    filter: invert(1) blur(2px) drop-shadow(20px 10px 9px @modal-red);
+    opacity: 0.09;
+}
+
+.slider--symbol-animation {
+    -webkit-animation: animate 10s ease-in-out infinite;
+    animation: animate 10s ease-in-out infinite;
+}
+
+  @-webkit-keyframes animate{
+    0% {
+        filter: invert(1) blur(2px) drop-shadow(20px 10px 9px @modal-red);
+        opacity: 0.09;
+    }
+    50% {
+        filter: invert(1) blur(5px) drop-shadow(30px 20px 2px fade(@modal-red, 80%));
+        opacity: 0.08;
+    }
+    100% {
+        filter: invert(1) blur(2px) drop-shadow(20px 10px 9px @modal-red);
+        opacity: 0.09;
+    }
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

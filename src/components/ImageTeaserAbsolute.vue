@@ -26,9 +26,9 @@
                                 </Transition>
                                 <tempObject style="height:100%" type="delay" animation="fade-in-out" :delay="3000">
                                     <a-row v-if="teaserContent" type="flex" justify="start" class="teaser--content-container">
-                                        <a-col :span="12" class="teaser--content">
+                                        <a-col :span="11" class="teaser--content">
                                             <Transition name="fade-in-out">
-                                                <a-row type="flex" justify="center" style="padding: 5em">
+                                                <a-row type="flex" justify="center" class="padding-all">
                                                     <a-col class="margin--bottom" :span="23">
                                                         <HeadlineComponent :content="teaser.headline" type="sub" :delay="2000" />
                                                     </a-col>

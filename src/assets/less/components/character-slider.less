@@ -10,6 +10,21 @@
     }
 }
 
+.slider--content-container {
+  height: 100%;
+  .unitize(padding-top, 120);
+  .unitize(padding-right, 70);
+  .unitize(padding-bottom, 120);
+  .unitize(padding-left, 70);
+
+    @media(min-width: @screen-xl){
+        .unitize(padding-top, 120);
+        .unitize(padding-right, 60);
+        .unitize(padding-bottom, 120);
+        .unitize(padding-left, 60);
+    }
+}
+
 .slider--symbol-bg {
     filter: invert(1) blur(2px) drop-shadow(20px 10px 9px @modal-red);
     opacity: 0.09;

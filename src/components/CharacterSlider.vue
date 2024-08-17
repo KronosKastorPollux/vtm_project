@@ -6,9 +6,9 @@
                 </a-row>
             </Transition>
             <a-row type="flex" justify="space-between" style="height: 100%">
-                <a-col :span="11" style="height: 100%;">
+                <a-col :lg="{ span: 13 }" :xl="{ span: 12 }" :xxl="{ span: 11}" style="height: 100%;">
                     <Transition name="fade-fast" mode="out-in">
-                        <a-row :key="slider[currentID].headline" type="flex" justify="center" style="padding: 10em 5em; height: 100%">
+                        <a-row :key="slider[currentID].headline" type="flex" justify="center" class="slider--content-container">
                             <a-col :span="24">
                                 <a-row type="flex" justify="center">
                                     <a-col class="margin--bottom" :span="23">
@@ -27,7 +27,7 @@
                         </a-row>
                     </Transition>
                 </a-col>
-                <a-col :span="12" style="height: 100%">
+                <a-col :lg="{ span: 10 }" :xl="{ span: 12 }" :xxl="{ span: 12 }" style="height: 100%">
                     <Transition name="fade-in-out">
                         <a-row type="flex" justify="center" style="height: 100%">
                             <a-col :span="24" style="height: 100%">

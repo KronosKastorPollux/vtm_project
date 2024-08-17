@@ -24,20 +24,27 @@
       <a-row type="flex" justify="center">
         <a-col :span="20">
           <a-row type="flex" justify="center">
-            <tempObject class="margin--bottom" type="delay" animation="fade-in-out" :delay="7000">
-              <a-col :span="24">
+            <a-col :span="24">
+              <tempObject class="margin--bottom" type="delay" animation="fade-in-out" :delay="7000">
                 <LinkComponent path="/sects" content="Sekten">
                   <ButtonComponent content="Sekten"></ButtonComponent>
                 </LinkComponent>
-              </a-col>
             </tempObject>
-            <tempObject class="margin--bottom" type="delay" animation="fade-in-out" :delay="8000">
-              <a-col :span="24">
+            </a-col>
+            <a-col :span="24">
+              <tempObject class="margin--bottom" type="delay" animation="fade-in-out" :delay="8000">
                 <LinkComponent path="/clans">
                   <ButtonComponent content="Clans"></ButtonComponent>
                 </LinkComponent>
-              </a-col>
-            </tempObject>
+              </tempObject>
+            </a-col>
+            <a-col :span="24">
+              <tempObject class="margin--bottom" type="delay" animation="fade-in-out" :delay="9000">
+                <LinkComponent path="/disciplines">
+                  <ButtonComponent content="Disziplinen"></ButtonComponent>
+                </LinkComponent>
+              </tempObject>
+            </a-col>
           </a-row>
         </a-col>
       </a-row>

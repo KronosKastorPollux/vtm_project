@@ -62,7 +62,7 @@ return {
             closed: false,
             open: false,
             delay: 2000,
-            bodytext: 'Die Camarilla ist die am besten organisierte Vampirsekte, ein elitärer Club, der Traditionen und die Kontrolle der sterblichen Bevölkerung hinter den Kulissen bevorzugt. In ihren Domänen setzen sie sechs große Traditionen durch, darunter vor allem die Maskerade. Alle Clans haben eine individuelle Präsenz im Elfenbeinturm, obwohl eine ausgewählte Gruppe von Säulenclans den Kern der Mitgliedschaft ausmacht. Einst hieß die Camarilla alle Kindreds willkommen, die ihre Gesetze befolgten, aber die jüngsten Ereignisse haben die Führung veranlasst, exklusivere Mitgliedschaftsregeln zu erlassen. Anarchen, Caitiff und dünnblütige Vampire sind in der Sekte nicht zugelassen.'
+            bodytext: 'Die Malkavianer oder Clan des Mondes sind einer der Clans, die zu den modernen Zeiten der Camarilla angehören. Sie sind vor allem bekannt dafür, dass alle seine Mitglieder unheilbar geisteskrank sind, weshalb viele Kainiten ihnen misstrauen. Die weiseren unter ihnen allerdings erkennen in den Malkavianern wertvolle Berater, da diese mit einer seherischen Gabe gesegnet sind.'
         },
         {
             id: 1,
@@ -73,18 +73,40 @@ return {
             closed: false,
             open: false,
             delay: 2000,
-            bodytext: 'Die Camarilla ist die am besten organisierte Vampirsekte, ein elitärer Club, der Traditionen und die Kontrolle der sterblichen Bevölkerung hinter den Kulissen bevorzugt. In ihren Domänen setzen sie sechs große Traditionen durch, darunter vor allem die Maskerade. Alle Clans haben eine individuelle Präsenz im Elfenbeinturm, obwohl eine ausgewählte Gruppe von Säulenclans den Kern der Mitgliedschaft ausmacht. Einst hieß die Camarilla alle Kindreds willkommen, die ihre Gesetze befolgten, aber die jüngsten Ereignisse haben die Führung veranlasst, exklusivere Mitgliedschaftsregeln zu erlassen. Anarchen, Caitiff und dünnblütige Vampire sind in der Sekte nicht zugelassen.'
+            bodytext: 'Die Gangrel streifen durch die Wildnis genauso wie durch den Großstadtdschungel, und kein anderer Vampirclan kann es mit ihrer Fähigkeit aufnehmen, in jeder Umgebung zu überleben und zu gedeihen. Sie sind oft sehr territorial und verfügen über Fähigkeiten der Gestaltveränderung. Gangrels neigen dazu, sich weniger um Äußerlichkeiten und Status zu kümmern als um Taten und Leistungen.'
         },
         {
             id: 1,
             bg: require('../assets/images/clans/toreador/toreador_nur_hg.jpg'),
             image: 'toreador/toreador.png',
-            symbol: 'tremere/tremere_symbol.svg',
+            symbol: 'toreador/toreador_symbol.svg',
             headline: 'Toreador',
             closed: false,
             open: false,
             delay: 2000,
-            bodytext: 'Die Camarilla ist die am besten organisierte Vampirsekte, ein elitärer Club, der Traditionen und die Kontrolle der sterblichen Bevölkerung hinter den Kulissen bevorzugt. In ihren Domänen setzen sie sechs große Traditionen durch, darunter vor allem die Maskerade. Alle Clans haben eine individuelle Präsenz im Elfenbeinturm, obwohl eine ausgewählte Gruppe von Säulenclans den Kern der Mitgliedschaft ausmacht. Einst hieß die Camarilla alle Kindreds willkommen, die ihre Gesetze befolgten, aber die jüngsten Ereignisse haben die Führung veranlasst, exklusivere Mitgliedschaftsregeln zu erlassen. Anarchen, Caitiff und dünnblütige Vampire sind in der Sekte nicht zugelassen.'
+            bodytext: 'Die Toreador sind für ihr verführerisches Wesen, ihr fesselndes Auftreten und ihre eloquente Anmut bis hin zur Besessenheit bekannt. Sie nehmen Künstler und Liebhaber in ihre Reihen auf und versuchen immer wieder, ihre eigenen abgestumpften Herzen zu rühren. Mit ihrer übernatürlichen Anmut und ihrem Charme sind die Diven immer auf der Suche nach dem nächsten Nervenkitzel und hinterlassen ein Sammelsurium von ausrangierten Liebhabern und Opfern.'
+        },
+        {
+            id: 1,
+            bg: require('../assets/images/clans/ventrue/ventrue_nur_hg.png'),
+            image: 'ventrue/ventrue.png',
+            symbol: 'ventrue/ventrue_symbol.svg',
+            headline: 'Ventrue',
+            closed: false,
+            open: false,
+            delay: 2000,
+            bodytext: 'Nur wenige Vampire sind so erhaben und aristokratisch wie die Ventrue, die sich selbst für die wahren Erben der Welt halten und für die einzigen Wesen, die würdig sind, sie zu kontrollieren und zu beeinflussen. Ventrue bekleiden fast immer Machtpositionen - Politiker, Richter, Aristokraten, einflussreiche Geschäftsleute. Ihre Machtgier ermutigt sie dazu immer mehr auf Kosten anderer zu erreichen. Für sie zählt nur eines: Macht und diejenigen, die sie ausüben.'
+        },
+        {
+            id: 1,
+            bg: require('../assets/images/clans/nosferatu/nosferatu_nur_hg.png'),
+            image: 'nosferatu/nosferatu.png',
+            symbol: 'nosferatu/nosferatu_symbol.svg',
+            headline: 'Nosferatu',
+            closed: false,
+            open: false,
+            delay: 2000,
+            bodytext: 'Die Clansschwäche der Nosferatu ist diejenige, die am besten sichtbar ist – der Fluch Kains deformiert ihren Körper, macht sie unansehnlich, zwingt sie, eine Existenz im Schatten zu führen, verborgen vor den Menschen – denn schon ihr Anblick bricht die Maskerade. Sie sind bekannt dafür, ruhig und rational zu sein und Informationen und Geheimnisse zu hüten und zu verkaufen.'
         }
     ],
     colSpan : 6

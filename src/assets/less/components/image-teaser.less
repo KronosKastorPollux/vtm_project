@@ -63,7 +63,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 7em 7em 7em 10em;
+    .unitize(padding-top, 70);
+    .unitize(padding-right, 70);
+    .unitize(padding-bottom, 70);
+    .unitize(padding-left, 20);
+
+    @media(min-width: @screen-xl){
+        .unitize(padding-top, 120);
+        .unitize(padding-right, 90);
+        .unitize(padding-bottom, 90);
+        .unitize(padding-left, 100);
+    }
 }
 
 .teaser--content {

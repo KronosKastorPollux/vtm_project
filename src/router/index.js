@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import StartView from '../views/StartView.vue'
 import SectsView from '../views/SectsView.vue'
 import ClansView from '../views/ClansView.vue'
+import DisciplinesView from '../views/DisciplinesView.vue'
 
 const routes = [
   {
@@ -27,6 +28,12 @@ const routes = [
     path: '/clans',
     name: 'clans',
     component: ClansView,
+    meta: { transition: 'fade-in-out' },
+  },
+  {
+    path: '/disciplines',
+    name: 'disciplines',
+    component: DisciplinesView,
     meta: { transition: 'fade-in-out' },
   },
   {

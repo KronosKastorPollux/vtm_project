@@ -1,0 +1,65 @@
+.sidebar {
+    height: 100%;
+    border: solid 1px fade(@white, 50%);
+    padding: 3% 2%;
+    background-color: @grey-dark;
+
+    &.sidebar-menu {
+      height: fit-content
+    }
+}
+
+.filter-checkbox col {
+    height: fit-content;
+  }
+
+.filter-checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    border: none;
+    background-color: @white;
+    height: 15px;
+    width: 15px;
+  }
+
+  .filter-checkbox input[type="checkbox"]:after {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border: none;
+    content: "";
+    background-color: @white;
+  }
+
+  .filter-checkbox .label {
+    text-align: start;
+    padding: 2%;
+  }
+
+
+
+.filter-checkbox input[type="checkbox"]:checked:before {
+    content: '\2714';
+    color: @black;
+    margin: 5% 10%;
+}
+
+.filter-select {
+  text-align: start;
+  select {
+    font-family: @font-primary;
+  }
+}
+
+.filter-item:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+
+  .image--disciplines {
+    filter: invert(1) drop-shadow(4px 4px 5px @modal-red);
+  }
+}

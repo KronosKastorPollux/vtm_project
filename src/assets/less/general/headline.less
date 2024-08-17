@@ -29,6 +29,7 @@
   .unitize(letter-spacing, 10);
   text-transform: uppercase;
   margin-top: 10px;
+  color: @white;
 
   @media(min-width: @screen-md){
     .unitize(font-size, @font-size-headline-main - 70);
@@ -71,6 +72,7 @@
   .unitize(line-height, @font-size-headline-main - 30);
   .unitize(letter-spacing, 10);
   margin-top: 0;
+  border-bottom: 1px solid @white;
 
   @media(min-width: @screen-md){
     .unitize(font-size, @font-size-headline-main - 68);
@@ -114,6 +116,74 @@
   @media(min-width: @am-xl){
     .unitize-margin(0,0,@margin-bottom-headline,0);
   }
+}
+
+.headline--catalog-item{
+  .unitize(font-size, @font-size-headline-main - 85);
+  .unitize(line-height, @font-size-headline-main - 50);
+  .unitize(letter-spacing, 5);
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: @white;
+
+  @media(min-width: @screen-md){
+    .unitize(font-size, @font-size-headline-main - 80);
+    .unitize(line-height, @font-size-headline-main - 45);
+  }
+
+  @media(min-width: @am-xl){
+    .unitize(font-size, @font-size-headline-main - 80);
+    .unitize(line-height, @font-size-headline-main - 45);
+  }
+}
+
+
+.headline--h3{
+  .unitize(font-size, @font-size-headline-main - 80);
+  .unitize(line-height, @font-size-headline-main - 15);
+  .unitize(letter-spacing, 5);
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: @white;
+
+  @media(min-width: @screen-md){
+    .unitize(font-size, @font-size-headline-main - 75);
+    .unitize(line-height, @font-size-headline-main * 1.5 - 40);
+  }
+
+  @media(min-width: @am-xl){
+    .unitize(font-size, @font-size-headline-main - 75);
+    .unitize(line-height, @font-size-headline-main * 1.5 - 40);
+  }
+}
+
+
+.headline--small{
+  .unitize(font-size, @font-size-headline-main - 85);
+  .unitize(line-height, @font-size-headline-main - 60);
+  .unitize(letter-spacing, 5);
+  text-transform: uppercase;
+  color: @white;
+  .unitize(letter-spacing, 5);
+  border-bottom: 1px solid @white;
+
+  @media(min-width: @screen-md){
+    .unitize(font-size, @font-size-headline-main - 85);
+    .unitize(line-height, @font-size-headline-main - 60);
+  }
+
+  @media(min-width: @am-xl){
+    .unitize(font-size, @font-size-headline-main - 85);
+    .unitize(line-height, @font-size-headline-main - 60);
+  }
+}
+
+.headline--align-start {
+  text-align: start;
+}
+
+.headline--no-border {
+  border: none;
 }
 
 .headline--bold {

@@ -3,11 +3,11 @@
     <template v-if="!overflow">
       <div class="image--overflov-hidden"
            :class="className + ' ' + (loadAnimated  === true ? 'loading' : '') + ' ' + (loaded  === true ? 'loaded' : '')"
-           :style="{'background-image': 'url('+src+')'}"
+           :style="[border ? {'border': '0.5px solid white'} : {}, {'background-image': 'url('+src+')', }, round ? {'border-radius': '100%'} : {'border-radius': '0'}]"
       ></div>
     </template>
     <template v-else>
-      <img :class="className + ' ' + (loadAnimated  === true ? 'loading' : 'loaded') + ' ' + (loaded  === true ? 'loaded' : '')" :src="src" @load="loadedImage" :style="{'width': imageWidth, 'height': imageHeight}" />
+      <img :class="className + ' ' + (loadAnimated  === true ? 'loading' : 'loaded') + ' ' + (loaded  === true ? 'loaded' : '')" :src="src" @load="loadedImage" :style="[border ? {'border': '0.5px solid white'} : {}, round ? {'border-radius': '100%'} : {'border-radius': '0'}, {'width': imageWidth, 'height': imageHeight}]" />
       <span v-if="this.$slots.default"><slot></slot></span>
     </template>
   </div>
@@ -49,6 +49,16 @@ export default {
       type: Boolean,
       required: false,
       default: true
+    },
+    border: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    round: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
   data () {

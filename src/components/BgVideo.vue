@@ -1,6 +1,6 @@
 <template>
 <div>
-    <video class="bg-video" :id="'video-' + UniqueId" muted autoplay loop>
+    <video ref="video" class="bg-video" :id="'video-' + UniqueId" :muted="muted" autoplay loop>
         <source :src="video" type="video/mp4">
     </video>
 </div>
@@ -21,10 +21,20 @@ export default {
     video: {
         type: String,
         required: true
+    },
+    muted: {
+        type: Boolean,
+        required: true
+    },
+    volume: {
+        type: Number,
+        required: false,
+        default: 0.2
     }
   },
   mounted() {
     this.UniqueId = this._uid;
+    this.$refs.video.volume = this.volume
   }
 }
 </script>

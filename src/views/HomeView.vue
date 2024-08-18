@@ -45,6 +45,13 @@
                 </LinkComponent>
               </tempObject>
             </a-col>
+            <a-col :span="24">
+              <tempObject class="margin--bottom" type="delay" animation="fade-in-out" :delay="10000">
+                <LinkComponent path="/map">
+                  <ButtonComponent content="Karte"></ButtonComponent>
+                </LinkComponent>
+              </tempObject>
+            </a-col>
           </a-row>
         </a-col>
       </a-row>
